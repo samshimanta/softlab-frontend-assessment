@@ -1,1 +1,44 @@
-<p>sign-in works!</p>
+
+<div class="container sign-up-component flex justify-content-center align-items-center">
+    <img src="../../../../assets/images/Illustration.png" alt="image-temp">
+   
+
+    <div class="welcome-text-container">
+        <h1 class="header-text">Welcome Back!</h1>
+        <p class="header-sub-text">welcome back we missed you</p>
+
+        
+      
+            <mat-form-field class="w-full input-field custom-style background-change input-field-modify-bg"  >
+              <mat-label>Username</mat-label>
+             
+              <input matInput [type]="hide ? 'password' : 'text'">
+              <span matTextPrefix><mat-icon>person_outline</mat-icon></span>
+            
+            </mat-form-field>
+            <mat-form-field  class="w-full input-field custom-style background-change input-field-modify-bg " >
+                <mat-label>Enter your password</mat-label>
+               
+                <input matInput [type]="hide ? 'password' : 'text'">
+                <span matTextPrefix><mat-icon>person_outline</mat-icon></span>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  
+                  <span matTextSuffix><mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon></span>
+                  <!-- <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
+                </button>
+              </mat-form-field>
+
+              <button mat-raised-button color="primary">Primary</button>
+
+          
+         
+          
+    
+    </div>
+
+</div>
+
+<div class="inline-flex">
+  <div class="hidden md:block bg-primary font-bold align-items-center justify-content-center p-4 border-round mr-3 bg-primary">Hide on a small screen</div>
+  <div class="block md:hidden bg-primary font-bold align-items-center justify-content-center p-4 border-round mr-3">Visible on a small screen</div>
+</div>
