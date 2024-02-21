@@ -37,6 +37,9 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "node_modules/primeflex/primeflex.css",
+              "primeflex/themes/primeone-dark.css" ,   
               "src/styles.scss"
             ],
             "scripts": []
@@ -97,6 +100,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
             "scripts": []
